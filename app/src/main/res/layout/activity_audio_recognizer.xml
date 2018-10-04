@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_record"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_round_blue_style"
+            android:text="开始录音"
+            android:textColor="#111111" />
+
+        <Button
+            android:id="@+id/button_stopListening"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_round_orange_style"
+            android:text="结束录音"
+            android:textColor="#111111" />
+
+        <Button
+            android:id="@+id/button_cacelListening"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_round_orange_style"
+            android:text="取消录音"
+            android:textColor="#111111" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_writePcm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_oval_bg"
+        android:text="读取PCM文件"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/auto_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_oval_bg"
+        android:text="自动测试"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/start_record_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/btn_oval_bg"
+            android:text="Confirm"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/result_right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Right" />
+
+        <CheckBox
+            android:id="@+id/result_wrong"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Wrong" />
+    </LinearLayout>
+</LinearLayout>
